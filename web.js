@@ -8,8 +8,7 @@ var buf = new Buffer(100);
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-
-  buf.write("init");
+ 
   fs.readFile(infile, 'utf-8', function (err, data) {
    if (err) {
     return console.log(err);
