@@ -2,11 +2,11 @@ var express = require('express');
 var fs = require('fs');
 
 var infile = "index.html";
+var buffer = new Buffer(100);
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var buffer = new Buffer(100);
   buffer = fs.readFile(infile);
   response.send(buffer.toString("utf-8", 0, 29));
 });
