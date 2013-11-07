@@ -1,4 +1,4 @@
 bitstarter
 ==========
 
-Bitstarter simple website (only html)
+Bitstarter simple website (only html :))
